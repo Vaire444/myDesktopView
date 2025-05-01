@@ -47,21 +47,33 @@ body {
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
 
+.contact {
+    justify-items: center;
+}
+
+.contact-row {
+    display: block;
+}
+
 .message {
+    display: block;
     width: 150px;
     height: 150px;
     background-color: rgb(87, 168, 214);
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
 
+.message-form {
+    display: none;
 }
 
 .social-media div {
     display: inline-block;
+    justify-items: center;
     width: 90px;
     height: 90px;
     background-color: rgb(235, 172, 78);
     clip-path: circle(50% at 50% 50%);
-
 }
 
 .menu {
@@ -95,9 +107,7 @@ body {
     display: none;
 }
 
-.message-form {
-    display: none;
-}
+
 
 @media (min-width: 600px) and (max-width: 1024px) {
     body {
@@ -191,11 +201,13 @@ body {
     .logo {
         width: 60px;
         height: 60px;
+        margin-left: 20px;
     }
 
     .menu {
         width: 100%;
         grid-template-columns: 1fr 2fr;
+        margin-top: 10px;
     }
 
     .hamburger-menu {
@@ -254,8 +266,8 @@ body {
 
     .message-form {
         display:flex;
-        width: 460px;
-        height: 460px;
+        width: 640px;
+        height: 540px;
         background-color: rgb(85, 42, 135);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         justify-self: left;
@@ -264,8 +276,15 @@ body {
     .social-media {
         width: 100%;
         display: flex;
-        justify-content: left;
-        gap: 20px;
+        justify-self: end;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .contact-row {
+        display: flex;
+        align-items: flex-end;
+        gap: 50px;
     }
 
 }
