@@ -253,7 +253,7 @@ body {
     }
 
     .message-form {
-        display:;
+        display:flex;
         width: 460px;
         height: 460px;
         background-color: rgb(85, 42, 135);
